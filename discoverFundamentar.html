@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!--
+    Imagens
+-->
+<a href="https://rocketseat.com.br/">
+    <figure>
+        <img src="https://rocketseat.com.br/icons/icon-48x48.png"
+        alt="Logo Rocketseat"
+        height="250px">
+        <figcaption>colocar um titulo na imagem</figcaption>
+    </figure>
+</a>
+
+
+<!--
+    <svg>
+-->
+<svg width="200" height="200">
+    <circle cx="50" cy="50" r="40" stroke="green"
+    stroke-width="4" fill="yellow"/>
+</svg>
+
+<svg width="300" height="200">
+    <rect width="100%" height="100%" fill="blue"/>
+</svg>
+
+
+<!--
+    POSICIONANDO FOGUETES
+
+    #Pages Layouts
+        - Tables
+        - Floats and clear
+        - Frameworks and Grid Systems
+        - Flexbox
+        - Grid
+    #Posicionamentos
+        Controlando onde, na página, o elemento irá ficar, alterando o fluxo normal dos elementos.
+        - Name: position
+        - Value: static|relative|absolute|fixed
+        static: padrao;
+        relative: top, right, left, z-index;
+        absolute: em relacao a pagina toda;
+        fixed: fixa o elemento na pagina;
+        element staking: z-index - empilhamento dos elementos;
+    #Flexbox
+        Nos permite posicionar os elementos dentro da caixa;
+        Controle em uma dimensão (horizontal ou vertical);
+        Alinhamento, direcionamento, ordenar e tamanhos
+        div.parent{
+            display: flex;
+        }
+        flex-direction
+            Qual a direção do flex: horizontal ou vertical
+            row | column
+        alinhamento
+            Justify-content
+            align-items
+    #Grid
+        Posicionamento dos elementos dentro da caixa;
+        Posicionamento horizontal e vertical ao mesmo tempo;
+        Pode ser flexivel ou fixo;
+        Cria espaços para os elementos filhos habitarem;
+-->
+
+<div class="container">
+    <div class="box blue"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+</div>
+
+<header>
+    <div>logo</div>
+    <div>menu</div>
+</header>
+<main>CONTEUDO</main>
+<aside>INFOS ADICIONAIS</aside>
+<footer>RODAPÉ</footer>
+
+</body>
+</html>
+
+
+<!--
+    Tipografia transmite mensagem
+    - negrito
+    - tamanho
+    - estilo
+
+    Basic Font Properties
+    font-family
+    font-weight -- Peso da fonte
+    font-style -- Estilo da fonte
+    font-size -- tamanho da fonte
+
+    Font Family
+    Tipo de fonte de um elemento
+    Lista de fontes e ordem de prioridade
+    Inclui *fallback* font
+    -serif
+    -sans
+
+    Web Fonts
+    fontes do sistema x fontes da web
+    como usar fontes para web?
+    @font-face
+    @import
+    link
+
+    Mais estilo as fontes
+    https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant
+
+    Font variant -- variações na apresentação fonte
+
+    Font Stretch -- alargamento ou encolhimento da fonte
+                 -- aceita palavra-chaves como: expanded, condensed, normal
+                 -- aceita porcentagem de 50% a 200%
+    Letter Spacing -- espaços entre caracteres
+    Word Spacing -- espaços entre palavras
+    Line height -- espaços entre linhas
+                -- pode ser com unidades ou sem unidades de medida
+                -- comuns: 1.5 ou 2
+    Text transform -- transformação do texto
+                   -- uppercase | capitalize | lowercase | none 
+    Text decoration -- aparencia decorativa de um texto
+                    -- line: underline | overline | line-through
+                    -- podemos aplicar mais de um valor
+                    -- style: wavy | dotted | double | dashed | solid
+                    -- color: <color> values
+    text align -- alinhamento de um texto
+               -- center | left | right | justify
+    text shadow -- sombra aplicada a um texto
+                -- permite múltiplos valores
+                -- offset-x | offset-y | biur-radius | color 
+    Shorthand -- font-style, font-variant, font-weight, font-stretch, font-size, line-height e font-family
+
+-->
+
+<p>
+    O rato roeu a roupa do rei de Roma.
+</p>
+
