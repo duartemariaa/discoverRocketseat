@@ -10,32 +10,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     
     <!--
     Imagens
 -->
-<a href="https://rocketseat.com.br/">
-    <figure>
-        <img src="https://rocketseat.com.br/icons/icon-48x48.png"
-        alt="Logo Rocketseat"
-        height="250px">
-        <figcaption>colocar um titulo na imagem</figcaption>
-    </figure>
-</a>
+<main>
+    <a href="https://rocketseat.com.br/">
+        <figure>
+            <img src="https://rocketseat.com.br/icons/icon-48x48.png"
+            alt="Logo Rocketseat"
+            height="250px">
+            <figcaption>colocar um titulo na imagem</figcaption>
+        </figure>
+    </a>
+</main>
 
 
 <!--
     <svg>
 -->
-<svg width="200" height="200">
-    <circle cx="50" cy="50" r="40" stroke="green"
-    stroke-width="4" fill="yellow"/>
-</svg>
-
-<svg width="300" height="200">
-    <rect width="100%" height="100%" fill="blue"/>
-</svg>
+<main>
+    <svg width="200" height="200">
+        <circle cx="50" cy="50" r="40" stroke="green"
+        stroke-width="4" fill="yellow"/>
+    </svg>
+    
+    <svg width="300" height="200">
+        <rect width="100%" height="100%" fill="blue"/>
+    </svg>
+</main>
 
 
 <!--
@@ -76,42 +81,33 @@
         Cria espaços para os elementos filhos habitarem;
 -->
 
-<div class="container">
-    <div class="box blue"></div>
-    <div class="box red"></div>
-    <div class="box green"></div>
-</div>
 
-<header>
-    <div>logo</div>
-    <div>menu</div>
-</header>
-<main>CONTEUDO</main>
-<aside>INFOS ADICIONAIS</aside>
-<footer>RODAPÉ</footer>
-
-</body>
-</html>
+    <div class="container">
+        <div class="box blue"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+    </div>
+    
+    <header>
+        <div>logo</div>
+        <div>menu</div>
+    </header>
+    <main>CONTEUDO</main>
+    <aside>INFOS ADICIONAIS</aside>
+    <footer>RODAPÉ</footer>
 
 
-<!--
-    Tipografia transmite mensagem
-    - negrito
-    - tamanho
-    - estilo
+
+    <!--
+    Tipografia 
 
     Basic Font Properties
     font-family
-    font-weight -- Peso da fonte
-    font-style -- Estilo da fonte
-    font-size -- tamanho da fonte
+    font-weight 
+    font-style 
+    font-size 
 
     Font Family
-    Tipo de fonte de um elemento
-    Lista de fontes e ordem de prioridade
-    Inclui *fallback* font
-    -serif
-    -sans
 
     Web Fonts
     fontes do sistema x fontes da web
@@ -123,28 +119,24 @@
     Mais estilo as fontes
     https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant
 
-    Font variant -- variações na apresentação fonte
+    Font variant 
 
-    Font Stretch -- alargamento ou encolhimento da fonte
-                 -- aceita palavra-chaves como: expanded, condensed, normal
-                 -- aceita porcentagem de 50% a 200%
-    Letter Spacing -- espaços entre caracteres
-    Word Spacing -- espaços entre palavras
-    Line height -- espaços entre linhas
-                -- pode ser com unidades ou sem unidades de medida
-                -- comuns: 1.5 ou 2
-    Text transform -- transformação do texto
-                   -- uppercase | capitalize | lowercase | none 
-    Text decoration -- aparencia decorativa de um texto
-                    -- line: underline | overline | line-through
-                    -- podemos aplicar mais de um valor
-                    -- style: wavy | dotted | double | dashed | solid
-                    -- color: <color> values
-    text align -- alinhamento de um texto
-               -- center | left | right | justify
-    text shadow -- sombra aplicada a um texto
-                -- permite múltiplos valores
-                -- offset-x | offset-y | biur-radius | color 
+    Font Stretch 
+
+    Letter Spacing 
+
+    Word Spacing 
+
+    Line height 
+
+    Text transform 
+
+    Text decoration 
+
+    text align 
+
+    text shadow 
+
     Shorthand -- font-style, font-variant, font-weight, font-stretch, font-size, line-height e font-family
 
 -->
@@ -152,4 +144,74 @@
 <p>
     O rato roeu a roupa do rei de Roma.
 </p>
+
+<!--
+    Formulários
+    <form>
+        
+    <fieldset>
+            
+    <legend>
+
+    <label>
+           
+    <button>
+            
+    <datalist>
+    
+    verificar a compatibilidade com o browser https://caniuse.com
+
+    <input>
+
+-->
+<form id="contact" action="">
+    <fieldset> 
+        <legend>Contact</legend>
+        <label for="">Name</label>
+        <input type="text">
+    </fieldset>
+    <button>Send</button>
+</form>
+
+<label for="">
+    Name:
+    <input type="text">
+</label>
+
+<button type="submit" name="button" value="valor qualquer">Send</button>
+
+<form action="">
+    <input type="text" value="">
+    <button type="reset">limpar</button>
+</form>
+
+<form action="" id="meu-form"></form>
+<button type="submit" form="meu-form">Send</button>
+
+<input type="text" list="fruitsdata" placeholder="Escolha uma fruta">
+
+<datalist id="fruitsdata">
+    <option>apple</option>
+    <option>banana</option>
+    <option>mango</option>
+    <option>orange</option>
+    <option>cherry</option>
+</datalist>
+
+<datalist id="colorsdata">
+    <option>#ff0000</option>
+    <option>#00ff00</option>
+</datalist>
+<input type="color" list="colorsdata">
+
+<input type="file">
+<input type="number">
+<input type="email">
+<input type="password">
+
+</body>
+</html>
+
+
+
 
