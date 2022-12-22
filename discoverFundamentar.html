@@ -162,6 +162,16 @@
     verificar a compatibilidade com o browser https://caniuse.com
 
     <input>
+        autocomplete
+        autofocus
+        disabled
+        readonly
+        required
+        placeholder
+        form
+        name
+    password - minlength/maxlength, size, pattern, placeholder, readonly/disabled, required, inputmode, autocomplete
+    
 
 -->
 <form id="contact" action="">
@@ -188,7 +198,7 @@
 <form action="" id="meu-form"></form>
 <button type="submit" form="meu-form">Send</button>
 
-<input type="text" list="fruitsdata" placeholder="Escolha uma fruta">
+<input type="text" list="fruitsdata" placeholder="Choose a fruit">
 
 <datalist id="fruitsdata">
     <option>apple</option>
@@ -208,6 +218,31 @@
 <input type="number">
 <input type="email">
 <input type="password">
+
+<input type="text" autocomplete="">
+<input type="text" autofocus>
+<input type="text" value="any value" disabled>
+<input type="text" value="any value" readonly>
+<form id="meu-form"></form>
+<input name="email" type="email" form="meu-form">
+<input type="email" required>
+<input type="email" placeholder="type your email">
+
+
+<form action="">
+    <label>password:</label>
+    <input type="password" minlength="4" maxlength="8" size="8">
+
+    <button type="submit">Send</button>
+</form>
+<form action="">
+    <label>password:</label>
+    <input type="password"  pattern="[0-9a-fA-F] {4, 8}" title="Coloque HEX no mínimo 4 caracteres e no máximo 8 caracteres" placeholder="type your password" required inputmode="numeric">
+
+    <button type="submit">Send</button>
+</form>
+
+
 
 </body>
 </html>
