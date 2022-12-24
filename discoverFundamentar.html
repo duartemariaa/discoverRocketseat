@@ -171,7 +171,10 @@
         form
         name
     password - minlength/maxlength, size, pattern, placeholder, readonly/disabled, required, inputmode, autocomplete
-    
+    email - multiple, list
+    url - spellcheck
+    file - accept
+    color 
 
 -->
 <form id="contact" action="">
@@ -242,7 +245,38 @@
     <button type="submit">Send</button>
 </form>
 
+<form action="">
+    <input type="email" placeholder="Email" minlength="8" maxlength="255" required multiple size="30" pattern=".+@rocketseat\.com\.br" title="Somente emails rocketseat.com.br serão aceitos">
+    <button type="submit">Send</button>
+</form>
+<form action="">
+    <datalist id="emailslist">
+        <option>mayk@mayk.com.br</option>
+        <option>mariaduarte061@hotmail.com</option>
+    </datalist>
+    <input type="email" list="emailslist" placeholder="Email" >
+    <button type="submit">Send</button>
+</form>
 
+<datalist id="urlsdata">
+    <option>https://meusite.com.br</option>
+    <option>https://meusite.com.br</option>
+</datalist>
+<form action="">
+    <input type="url" placeholder="htto://example.com.br" required pattern=".*\.com\.br.*" title="Somente domínios .com.br serão aceitos" list="urlsdata" spellcheck="false">
+    <button>Send</button>
+</form>
+
+
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file" placeholder="file" accept=".doc" multiple >
+</form>
+
+<datalist id="colorsdata">
+    <option>#0000ff</option>
+</datalist>
+<input type="color" list="colorsdata">
 
 </body>
 </html>
