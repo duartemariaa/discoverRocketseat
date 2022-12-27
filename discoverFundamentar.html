@@ -177,6 +177,9 @@
     color
     checkbox 
     hidden
+    radio
+    textarea
+    select / option
 
 -->
 <form id="contact" action="">
@@ -281,7 +284,7 @@
 <input type="color" list="colorsdata">
 
 
-<label for="subscribe">Receber notificações</label>
+<label for="subscribe">Receive notifications</label>
 <input type="checkbox" name="subscribe" id="subscribe" checked>
 
 <fieldset>
@@ -298,6 +301,31 @@
 
 
 <input type="hidden" name="id" value="8">
+
+
+<fieldseat>
+    <legend>Let's drink a coffee?</legend>
+    <label for="yep">yes</label>
+    <input type="radio" id="yep" name="coffee" value="yes">
+
+    <label for="nono">not</label>
+    <input type="radio" id="nono" name="coffee" value="no" checked>
+</fieldseat>
+
+
+<label for="message">Message</label>
+<textarea id="message"></textarea>
+<textarea name="message" cols="30" rows="10" minlength="4" maxlength="4" wrap="off" placeholder="type your message here"></textarea>
+
+
+<label for="carselect">Car model</label>
+<br>
+<select name="carmodel" id="carselect" multiple>
+    <option value="">Select model</option>
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+    <option value="bmw">X6</option>
+</select>
 
 </body>
 </html>
