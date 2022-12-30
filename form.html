@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<!--
+    Formulários
+    <form>
+        
+    <fieldset>
+            
+    <legend>
+
+    <label>
+           
+    <button>
+            
+    <datalist>
+    
+    verificar a compatibilidade com o browser https://caniuse.com
+
+    <input>
+        autocomplete
+        autofocus
+        disabled
+        readonly
+        required
+        placeholder
+        form
+        name
+    password - minlength/maxlength, size, pattern, placeholder, readonly/disabled, required, inputmode, autocomplete
+    email - multiple, list
+    url - spellcheck
+    file - accept
+    color
+    checkbox 
+    hidden
+    radio
+    textarea
+    select / option
+    optgroup
+    search
+    number
+    range
+    data e hora
+-->
+<form id="contact" action="">
+    <fieldset> 
+        <legend>Contact</legend>
+        <label for="">Name</label>
+        <input type="text">
+    </fieldset>
+    <button>Send</button>
+</form>
+
+<label for="">
+    Name:
+    <input type="text">
+</label>
+
+<button type="submit" name="button" value="valor qualquer">Send</button>
+
+<form action="">
+    <input type="text" value="">
+    <button type="reset">limpar</button>
+</form>
+
+<form action="" id="meu-form"></form>
+<button type="submit" form="meu-form">Send</button>
+
+<input type="text" list="fruitsdata" placeholder="Choose a fruit">
+
+<datalist id="fruitsdata">
+    <option>apple</option>
+    <option>banana</option>
+    <option>mango</option>
+    <option>orange</option>
+    <option>cherry</option>
+</datalist>
+
+<datalist id="colorsdata">
+    <option>#ff0000</option>
+    <option>#00ff00</option>
+</datalist>
+<input type="color" list="colorsdata">
+
+<input type="file">
+<input type="number">
+<input type="email">
+<input type="password">
+
+<input type="text" autocomplete="">
+<input type="text" autofocus>
+<input type="text" value="any value" disabled>
+<input type="text" value="any value" readonly>
+<form id="meu-form"></form>
+<input name="email" type="email" form="meu-form">
+<input type="email" required>
+<input type="email" placeholder="type your email">
+
+
+<form action="">
+    <label>password:</label>
+    <input type="password" minlength="4" maxlength="8" size="8">
+
+    <button type="submit">Send</button>
+</form>
+<form action="">
+    <label>password:</label>
+    <input type="password"  pattern="[0-9a-fA-F] {4, 8}" title="Coloque HEX no mínimo 4 caracteres e no máximo 8 caracteres" placeholder="type your password" required inputmode="numeric">
+
+    <button type="submit">Send</button>
+</form>
+
+<form action="">
+    <input type="email" placeholder="Email" minlength="8" maxlength="255" required multiple size="30" pattern=".+@rocketseat\.com\.br" title="Somente emails rocketseat.com.br serão aceitos">
+    <button type="submit">Send</button>
+</form>
+<form action="">
+    <datalist id="emailslist">
+        <option>mayk@mayk.com.br</option>
+        <option>mariaduarte061@hotmail.com</option>
+    </datalist>
+    <input type="email" list="emailslist" placeholder="Email" >
+    <button type="submit">Send</button>
+</form>
+
+<datalist id="urlsdata">
+    <option>https://meusite.com.br</option>
+    <option>https://meusite.com.br</option>
+</datalist>
+<form action="">
+    <input type="url" placeholder="htto://example.com.br" required pattern=".*\.com\.br.*" title="Somente domínios .com.br serão aceitos" list="urlsdata" spellcheck="false">
+    <button>Send</button>
+</form>
+
+
+
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file" placeholder="file" accept=".doc" multiple >
+</form>
+
+<datalist id="colorsdata">
+    <option>#0000ff</option>
+</datalist>
+<input type="color" list="colorsdata">
+
+
+<label for="subscribe">Receive notifications</label>
+<input type="checkbox" name="subscribe" id="subscribe" checked>
+
+<fieldset>
+    <legend>Choose your interests</legend>
+    <div>
+        <input type="checkbox" id="coding" name="interest" value="coding">
+        <label for="coding">Coding</label>
+    </div>
+    <div>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="music">Music</label>
+    </div>
+</fieldset>
+
+
+<input type="hidden" name="id" value="8">
+
+
+<fieldseat>
+    <legend>Let's drink a coffee?</legend>
+    <label for="yep">yes</label>
+    <input type="radio" id="yep" name="coffee" value="yes">
+
+    <label for="nono">not</label>
+    <input type="radio" id="nono" name="coffee" value="no" checked>
+</fieldseat>
+
+
+<label for="message">Message</label>
+<textarea id="message"></textarea>
+<textarea name="message" cols="30" rows="10" minlength="4" maxlength="4" wrap="off" placeholder="type your message here"></textarea>
+
+
+<label for="carselect">Car model</label>
+<br>
+<select name="carmodel" id="carselect" multiple>
+    <option value="">Select model</option>
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+    <option value="bmw">X6</option>
+</select>
+
+
+<label for="">Please choose one or more pets:
+    <select name="pets">
+        <optgroup label="4-legged pets">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+        </optgroup>
+        <optgroup label="flying pets">
+            <option value="parrot">Parrot</option>
+            <option value="macaw">Macaw</option>
+            <option value="albatross">Albatross</option>
+        </optgroup>
+    </select>
+</label>
+
+
+<datalist id="searchterms">
+    <option>Mac</option>
+    <option>Win</option>
+    <option>Linux</option>
+</datalist>
+<form action="">
+    <input type="search" name="q" list="searchterms">
+    <button>search</button>
+</form>
+
+<form action="">
+    <label for="">Search id</label>
+    <input type="search" name="id" size="5" pattern="[0-9] {2}" title="type your id: 99">
+    <button>Search</button>
+</form>
+
+
+<form action="">
+    <label for="">Number:</label>
+    <input type="number" min="2" max="89" step="10">
+    <button>send</button>
+</form>
+
+
+<input type="range" min="1" max="100" step="5">
+
+
+<input type="date">
+<br>
+<input type="datetime-local">
+<br>
+<input type="month">
+<br>
+<input type="time">
+<br>
+<input type="week">
+<br>
+
+<form action="">
+    <fieldseat>
+        <legend>Contact</legend>
+        <label for="name">Name</label>
+        <br>
+        <input id="name" type="text" name="name">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input id="email" type="email" name="email">
+        <br>
+        <br>
+        <label for="message">Message</label>
+        <br>
+        <textarea name="message" id="" cols="20" rows="10"></textarea>
+        <br>
+        <br>
+        <button>Send</button>
+    </fieldseat>
+</form>
+
+
+
+</body>
+</html>
