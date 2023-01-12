@@ -1,0 +1,93 @@
+#title {
+    color: aqua;
+}
+
+#content {
+    color: aquamarine;
+}
+
+.red {
+    color: red;
+}
+
+.big {
+    font-size: 2em;
+}
+
+[title] {
+    color: orange;
+}
+
+p:hover, h1:hover{
+    color: red;
+}
+
+/*//////////////////////////////////////*/
+body article h2{
+    color: red;
+}
+
+/*body > ul > li {
+    color: blue;
+}*/
+
+/*/////////////////////////////////////////////*/
+
+h1 + p {
+    color: green;
+}
+
+button + button {
+    margin-left: 32px;
+}
+
+h1 ~ p {
+    color: red;
+}
+
+/*///////////////////////////////////////////*/
+
+ul li:first-child {
+    font-weight: bold;
+}
+
+article p:nth-of-type(2) {
+    font-weight: bold;
+}
+
+/*//////////////////////////////////////////*/
+
+/*a:hover {
+    color: red;
+}
+
+input:focus {
+    border-color: red;
+    outline: none;
+}*/
+
+
+/*/////////////////////////////////////////*/
+
+input:required { /*disabled*/
+    background-color: red;
+}
+
+/*//////////////////////////////////////////*/
+
+li::before { /*after*/
+    content: "> ";
+}
+
+li::after { /*before*/
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+}
+
+li {
+    position: relative;
+}
