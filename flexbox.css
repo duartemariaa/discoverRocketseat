@@ -1,0 +1,302 @@
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.item1:nth-child(1){
+    order: 1;
+}
+
+/*//////////////////////////////////////////////////////*/
+
+.container {
+    display: flex;
+    border: 1px solid red;
+    height: 480px;
+}
+
+.item2 {
+    background-color: gray;
+    border: 1px solid;
+    flex: 1;
+}
+
+/*//////////////////////////////////////////////////////*/
+
+.container2 {
+    display: flex;
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    flex-direction: column-reverse;
+    height: 50vh;
+}
+
+/*//////////////////////////////////////////////////////*/
+.box {
+    display: flex;
+    border: 1px dashed red;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box div {
+    border: 1px solid;
+    width: 400px;
+}
+
+/*//////////////////////////////////////////////////////*/
+.box2 {
+    display: flex;
+    border: 1px dashed red;
+    flex-flow: column wrap; /*column, wrap, column/row wrap,*/
+}
+
+.box2 div {
+    border: 1px solid;
+    width: 80px;
+}
+
+/*//////////////////////////////////////////////////////*/
+.box3 {
+    display: flex;
+    justify-content: space-between; /*center*/
+    border: 1px dashed red;
+}
+
+.box3 div {
+    border: 1px solid;
+}
+
+/*//////////////////////////////////////////////////////*/
+.box4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*flex-end/start, stretch*/
+    border: 1px dashed red;
+    height: 150px;
+}
+
+.box4 div {
+    border: 1px solid;
+}
+
+/*//////////////////////////////////////////////////////*/
+.box5 {
+    display: flex;
+    border: 1px dashed red;
+    gap: 2px; /*2rem*/
+}
+
+.box5 div {
+    border: 1px solid;
+}
+
+/*//////////////////////////////////////////////////////*/
+.box6 {
+    display: flex;
+    border: 1px dashed red;
+}
+
+.box6 div {
+    border: 1px solid;
+    /*width: 25px;*/
+    flex-basis: 25px; /*auto, 25%*/
+}
+
+/*//////////////////////////////////////////////////////*/
+.box7 {
+    display: flex;
+    border: 1px dashed red;
+}
+
+.box7 div {
+    border: 1px solid;
+}
+
+.box7 div:nth-child(2),.box7 div:nth-child(3) {
+    flex-grow: 1;
+}
+
+.box7 div:nth-child(1) {
+    flex-grow: 2;
+}
+
+/*//////////////////////////////////////////////////////*/
+.box8 {
+    display: flex;
+    border: 1px dashed red;
+
+    width: 160px;
+}
+
+.box8 div {
+    flex-basis: 100%;
+    border: 1px solid;
+}
+
+.box8 div:nth-child(2) {
+    flex-shrink: 0;
+}
+
+/*//////////////////////////////////////////////////////*/
+.box9 {
+    display: flex;
+    border: 1px dashed red;
+}
+
+.box9 div {
+    border: 1px solid;
+    flex: 0 1 40px; /*grow shrink basis*/
+}
+
+/*/////////////////////////////////////////////////////*/
+* {
+    margin: 0;
+}
+
+.page {
+    border: 2px solid;
+    min-height: 100vh;
+    display: flex;
+}
+
+.page aside {
+    background: lightgreen;
+    flex: 1;
+}
+
+.page main {
+    background: lightblue;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.page main section:nth-child(1) {
+    background: lightgoldenrodyellow;
+    flex: 2;
+}
+.page main section:nth-child(2) {
+    background: lightsalmon;
+    flex: 0 170px;
+}
+.page main section:nth-child(3) {
+    background: lightpink;
+    flex: 1;
+}
+
+/*//////////////////////////////////////////////////////*/
+.box10 {
+    display: flex;
+    border: 1px dashed red;
+}
+
+.box10 div {
+    border: 1px solid;
+}
+
+.box10 div:nth-child(1) {
+    order: 1;
+}
+
+.box10 div:nth-child(2) {
+    order: 20;
+}
+
+.box10 div:nth-child(3) {
+    order: 0;
+}
+
+.box10 div:nth-child(4) {
+    order: -1;
+}
+
+/*//////////////////////////////////////////////////////*/
+/*.header {
+    border: 1px solid;
+    min-height: 100vh;
+    display: flex;
+}*/
+
+header {
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+    background-color: lightgray;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.item4 {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-items button {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.menu-items button:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+/*//////////////////////////////////////////////////////*/
+.container3 {
+    display: flex;
+    gap: 1rem;
+}
+
+.container3 aside, .container3 main {
+    border: 1px solid;
+    height: 95vh;
+}
+
+.container3 aside {
+    flex-basis: 25%;
+}
+
+.container3 main {
+    flex: 1;
+}
+
+/*//////////////////////////////////////////////////////*/
+.gallery img {
+    width: 30%;
+    height: auto;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8rem;
+    justify-content: center;
+}
+
+/*//////////////////////////////////////////////////////*/
+.container4 button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    gap: .4rem;
+}
+
+.container4 button img{
+    width: 30%;
+}
+
+
+
