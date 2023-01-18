@@ -283,20 +283,47 @@ header {
 }
 
 /*//////////////////////////////////////////////////////*/
-.container4 button{
+.container4 {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container4 .first-button, .container4 .second-button {
+    display: flex;
     align-items: center;
+    gap: .4rem;
     background-color: aqua;
     border: none;
     border-radius: 5px;
-    padding: 10px;
-    gap: .4rem;
 }
 
 .container4 button img{
     width: 30%;
 }
 
+.container4 .first-button:hover, .container4 .second-button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+/*//////////////////////////////////////////////////////*/
+.container5 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container5 main {
+    display: flex;
+    border: 1px solid;
+    height: 80vh;
+}
+
+footer {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
 
 
