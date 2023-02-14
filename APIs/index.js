@@ -63,6 +63,19 @@ app.route('/identidade/:nome').get((req, res) => res.send(req.params.nome))*/
 
 //query params
 //app.route('/').get((req, res) => res.send(req.query))
-app.route('/').get((req, res) => res.send(req.query.nome))
+/*app.route('/').get((req, res) => res.send(req.query.nome))
 
-app.route('/about/user').get((req, res) => res.send(req.query))
+app.route('/about/user').get((req, res) => res.send(req.query))*/
+
+
+
+//consumindo API com NodeJS
+//comsumindo com axios
+const axios = require('axios');
+
+app.route('/').get((req,res) => {
+    axios.get('https://api.github.com/users/duartemariaa')
+    //.then(result => res.send(result.data))
+    .then(result => res.send(`<img src="${result.data.avatar_url}"/>`))
+    .catch(error => console.log(error))
+})
