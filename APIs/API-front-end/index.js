@@ -58,7 +58,7 @@ app.route('/api/:id').put((req,res) => {
     }
 
     users = users.map(user => {
-        if(Number(user.id) == Number(userId)){
+        if(Number(user.id) === Number(userId)){
             user = updateUser
         }
         return user
